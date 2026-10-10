@@ -48,7 +48,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 a { color: inherit; text-underline-offset: 3px; }
 a:hover { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-em.mark { font-style: italic; color: var(--accent); }
+em.mark { font-style: normal; color: var(--accent); }
 .accent-bar { display: block; width: 48px; height: 4px; background: var(--accent); }
 
 .wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
