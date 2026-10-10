@@ -872,8 +872,8 @@
    "en": "Technical information:"
   },
   {
-   "vi": "website không sử dụng cookie theo dõi, công cụ phân tích hay quảng cáo. Website được lưu trữ trên GitHub Pages (GitHub, Inc., Hoa Kỳ) và tải phông chữ từ Google Fonts (Google LLC); hai dịch vụ này nhận địa chỉ IP và thông tin trình duyệt của bạn khi trang được tải, theo chính sách riêng của họ.",
-   "en": "this website does not use tracking cookies, analytics or advertising tools. It is hosted on GitHub Pages (GitHub, Inc., United States) and loads fonts from Google Fonts (Google LLC); these two services receive your IP address and browser information when the page loads, under their own policies."
+   "vi": "mặc định website không đặt cookie theo dõi hay quảng cáo. Khi website chạy quảng cáo Google Ads, website dùng Google tag (Google LLC) ở chế độ Consent Mode: trước khi bạn đồng ý, tag chỉ gửi tín hiệu không dùng cookie (như địa chỉ IP, thông tin trình duyệt, việc bạn bấm vào email liên hệ) để Google ước tính hiệu quả quảng cáo; chỉ khi bạn bấm “Đồng ý” trên banner cookie, Google mới được đặt cookie quảng cáo. Bạn có thể đổi lựa chọn bất cứ lúc nào qua mục “Cài đặt cookie” ở chân trang. Website được lưu trữ trên GitHub Pages (GitHub, Inc., Hoa Kỳ) và tải phông chữ từ Google Fonts (Google LLC); các dịch vụ này nhận địa chỉ IP và thông tin trình duyệt của bạn khi trang được tải, theo chính sách riêng của họ.",
+   "en": "by default this website sets no tracking or advertising cookies. When the site runs Google Ads campaigns, it uses the Google tag (Google LLC) in Consent Mode: before you consent, the tag only sends cookieless signals (such as IP address, browser information and whether you clicked the contact email) so Google can estimate ad performance; only after you click “Accept” on the cookie banner may Google set advertising cookies. You can change your choice at any time via “Cookie settings” in the footer. The site is hosted on GitHub Pages (GitHub, Inc., United States) and loads fonts from Google Fonts (Google LLC); these services receive your IP address and browser information when the page loads, under their own policies."
   },
   {
    "vi": "2. Mục đích sử dụng",
@@ -900,8 +900,8 @@
    "en": "3. Sharing"
   },
   {
-   "vi": "Thông tin chỉ được chia sẻ với nhà cung cấp dịch vụ cần thiết để vận hành (dịch vụ email Google Workspace, lưu trữ website GitHub Pages, phông chữ Google Fonts), hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu theo quy định pháp luật. Một số nhà cung cấp này đặt máy chủ ở nước ngoài, nên dữ liệu có thể được chuyển ra ngoài lãnh thổ Việt Nam.",
-   "en": "Information is shared only with service providers we need to operate (Google Workspace email, GitHub Pages hosting, Google Fonts), or when a competent authority requires it by law. Some of these providers operate servers abroad, so data may be transferred outside Vietnam."
+   "vi": "Thông tin chỉ được chia sẻ với nhà cung cấp dịch vụ cần thiết để vận hành (dịch vụ email Google Workspace, lưu trữ website GitHub Pages, phông chữ Google Fonts, và Google Ads nếu bạn đồng ý cookie quảng cáo), hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu theo quy định pháp luật. Một số nhà cung cấp này đặt máy chủ ở nước ngoài, nên dữ liệu có thể được chuyển ra ngoài lãnh thổ Việt Nam.",
+   "en": "Information is shared only with service providers we need to operate (Google Workspace email, GitHub Pages hosting, Google Fonts, and Google Ads if you accept advertising cookies), or when a competent authority requires it by law. Some of these providers operate servers abroad, so data may be transferred outside Vietnam."
   },
   {
    "vi": "4. Dữ liệu của khách hàng trong dự án",

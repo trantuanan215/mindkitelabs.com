@@ -148,3 +148,10 @@ em.mark { font-style: normal; color: var(--accent); }
 :lang(th) .label, :lang(th) h1, :lang(th) h2, :lang(th) h3, :lang(th) dt { letter-spacing: 0; }
 :lang(th) h1, :lang(th) h2, :lang(th) h3 { line-height: 1.4; }
 :lang(th) body { line-height: 1.8; }
+
+/* Cookie consent banner (only rendered when the Google Ads tag is configured) */
+.consent { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 90; max-width: 560px; margin-left: auto; padding: 20px; background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent); box-shadow: 0 16px 40px rgba(5, 28, 44, .16); font-size: var(--fs-sm); }
+.consent p { margin: 0 0 14px; color: var(--ink-2); }
+.consent-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.consent .btn { min-height: 40px; padding: 10px 16px; }
+.consent-link { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
