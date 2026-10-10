@@ -60,8 +60,9 @@ def rewrite_paths(html, page, lang):
     html = html.replace('href="/#lien-he"', f'href="/{lang}/#lien-he"')
     html = html.replace('<a href="/">', f'<a href="/{lang}/">')
     # language switcher: mark the current locale (switcher hrefs are absolute and untouched above)
-    html = html.replace(' aria-current="page">VI<', ">VI<")
+    html = html.replace(' lang="vi" aria-current="page">', ' lang="vi">')
     html = re.sub(rf'(hreflang="{lang}" lang="{lang}")>', r'\1 aria-current="page">', html)
+    html = html.replace('<span class="lang-code">VI</span>', f'<span class="lang-code">{lang.upper()}</span>')
     if lang == "th":
         html = html.replace("family=Be+Vietnam+Pro:wght@400;600", THAI_FONT)
         html = html.replace('font-family="Be Vietnam Pro, sans-serif"', 'font-family="Be Vietnam Pro, Noto Sans Thai, sans-serif"')
@@ -70,6 +71,8 @@ def rewrite_paths(html, page, lang):
 
 def leftovers(html):
     body = re.sub(r"<(script|style)[\s\S]*?</\1>", "", html)
+    # the language menu names each language in its own script on purpose
+    body = re.sub(r'<a [^>]*lang="vi"[^>]*>[^<]*</a>', "", body)
     found = [t.strip() for t in TEXT.findall(body) if VIETNAMESE.search(t)]
     found += [v for _, v in ATTRS.findall(body) if VIETNAMESE.search(v)]
     return found

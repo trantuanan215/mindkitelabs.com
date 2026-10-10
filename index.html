@@ -14,6 +14,10 @@
   <meta property="og:title" content="MindKite Labs — Tư vấn chuyển đổi số, dữ liệu và AI">
   <meta property="og:description" content="Biến dữ liệu và AI thành kết quả vận hành đo được.">
   <meta property="og:url" content="https://mindkitelabs.com/">
+  <meta property="og:image" content="https://mindkitelabs.com/assets/brand/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#051c2c">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,11 +44,14 @@
       <li><a href="#hop-tac">Hợp tác</a></li>
       <li><a href="#hoi-dap">Hỏi đáp</a></li>
     </ul>
-    <div class="lang-switch" aria-label="Ngôn ngữ">
-      <a href="/" hreflang="vi" lang="vi" aria-current="page">VI</a>
-      <a href="/en/" hreflang="en" lang="en">EN</a>
-      <a href="/th/" hreflang="th" lang="th">TH</a>
-    </div>
+    <details class="lang-menu">
+      <summary aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="M2.5 10h15M10 2.5c2.2 2.2 3.2 4.7 3.2 7.5s-1 5.3-3.2 7.5c-2.2-2.2-3.2-4.7-3.2-7.5s1-5.3 3.2-7.5z"/></svg><span class="lang-code">VI</span></summary>
+      <ul>
+        <li><a href="/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a></li>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+        <li><a href="/th/" hreflang="th" lang="th">ไทย</a></li>
+      </ul>
+    </details>
     <a class="btn btn-primary" href="#lien-he">Liên hệ</a>
   </nav>
 </header>
@@ -403,6 +410,7 @@
   </div>
 </footer>
 
+<script src="assets/lang-menu.js"></script>
 <script src="assets/main.js"></script>
 </body>
 </html>
