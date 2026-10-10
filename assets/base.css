@@ -123,3 +123,18 @@ em.mark { font-style: normal; color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Language switcher (always visible, also on mobile) */
+.nav { justify-content: flex-start; gap: 12px; }
+.lang-switch { display: flex; gap: 2px; margin-left: auto; font: var(--w-strong) var(--fs-xs)/1 var(--font-body); }
+@media (min-width: 860px) { .nav-links { margin-left: auto; } .nav .lang-switch { margin-left: 12px; } }
+.lang-switch a { padding: 8px 6px; color: var(--ink-3); text-decoration: none; letter-spacing: .06em; }
+.lang-switch a:hover { color: var(--accent); }
+.lang-switch a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--accent); }
+@media (max-width: 400px) { .nav > .btn { display: none; } }
+
+/* Thai: no letter-case, no tracking on combining marks, taller lines for stacked vowels/tones */
+:lang(th) { --font-body: "Be Vietnam Pro", "Noto Sans Thai", system-ui, sans-serif; }
+:lang(th) .label, :lang(th) h1, :lang(th) h2, :lang(th) h3, :lang(th) dt, :lang(th) .lang-switch a { letter-spacing: 0; }
+:lang(th) h1, :lang(th) h2, :lang(th) h3 { line-height: 1.4; }
+:lang(th) body { line-height: 1.8; }
