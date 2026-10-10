@@ -1,0 +1,17 @@
+/* About section: name meaning (Mind / Kite / Labs), mission and vision */
+.about-grid { display: grid; gap: 48px; }
+.name-list { margin: 0; display: grid; }
+.name-row { display: grid; gap: 6px 32px; padding-block: 28px; border-top: 1px solid var(--line); }
+.name-row:last-child { border-bottom: 1px solid var(--line); }
+.name-row dt { font: var(--w-strong) 2.25rem/1 var(--font-display); letter-spacing: -.02em; color: var(--accent); }
+.name-row dt small { display: block; margin-top: 10px; font: var(--w-strong) var(--fs-xs)/1.4 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.name-row dd { margin: 0; color: var(--ink-2); }
+.purpose { display: grid; gap: 16px; align-content: start; }
+.purpose-card { padding: 28px; background: var(--paper-2); border-left: 4px solid var(--accent); }
+.purpose-card.vision { background: var(--ink); border-left-color: var(--accent-2); }
+.purpose-card h3 { margin: 10px 0 12px; }
+.purpose-card p:not(.label) { margin: 0; color: var(--ink-2); }
+.purpose-card.vision h3 { color: #fff; }
+.purpose-card.vision .label, .purpose-card.vision p:not(.label) { color: var(--night-ink-2); }
+@media (min-width: 760px) { .name-row { grid-template-columns: 180px 1fr; } }
+@media (min-width: 960px) { .about-grid { grid-template-columns: 1.2fr 1fr; gap: 64px; } }
