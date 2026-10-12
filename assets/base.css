@@ -122,6 +122,10 @@ em.mark { font-style: normal; color: var(--accent); }
 .legal h2 { font-size: var(--fs-h3); margin: 44px 0 12px; }
 .legal ul { padding-left: 1.2em; }
 .legal li { margin-bottom: .4em; }
+.legal table { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); display: block; overflow-x: auto; }
+.legal th, .legal td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.legal th { background: var(--paper-2); font-weight: var(--w-strong); }
+.legal-nav { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: var(--fs-sm); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
